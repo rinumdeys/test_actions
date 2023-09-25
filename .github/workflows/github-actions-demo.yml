@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} and ${{ secrets.MY_NAME }} event."
-      - name: Create file
       - run: |
             echo '{ "name" : "munir"}' >> props.json
             cat props.json
