@@ -6,8 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - name: save state file and push
-        run: |
-          git add state.json
-          git commit -m "updating sate-- state.json"
-          git push
+
